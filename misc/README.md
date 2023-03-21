@@ -1,3 +1,6 @@
+# Miscellaneous
+Commands
+
 ## `watch`
 For gpu monitoring
 ```zsh
