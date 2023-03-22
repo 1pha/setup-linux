@@ -45,6 +45,7 @@ Host HostB
   User userB
   ProxyJump HostA
 ```
+
 * One can add `IdentityFile` on final target server `HostB`
 * Why does one need proxy?
   - Some servers are not accessible even with VPN

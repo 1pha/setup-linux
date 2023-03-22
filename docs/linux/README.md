@@ -43,7 +43,6 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=111'
 ## 2. `tmux`
 ```bash
 sudo apt-get install zsh
-ctrl b, d to exti
 ```
 ### Basic usage
 * New session: `tmux new -s work`
@@ -65,12 +64,12 @@ Reference
 rsync -e 'ssh -p 20000' LOCALDIR REMOTEDIR
 ```
 Flags
-- `-v`: verbosity
-- `-r`: recursive
-- `-a`: archive mode
-- `-z`: Data compress
-- `-h`: Human-readable
-- `-e`: Extra ssh flags to feed
+* `-v`: verbosity
+* `-r`: recursive
+* `-a`: archive mode
+* `-z`: Data compress
+* `-h`: Human-readable
+* `-e`: Extra ssh flags to feed
 
 ## 4. Checking storage for certain directory
 
