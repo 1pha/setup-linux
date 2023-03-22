@@ -1,0 +1,12 @@
+site_name: Linux-SSL
+nav:
+  - Home: ./README.md
+  - Conda: conda/README.md
+  - GPU: gpu/README.md
+  - grafana: grafana/README.md
+  - misc: misc/README.md
+  - ssh: ssh/README.md
+  - github: github/README.md
+
+theme:
+  name: readthedocs
