@@ -1,6 +1,6 @@
 site_name: Codehacks for Deep Learning Servers
 nav:
-  - Home: ./home.md
+  - Home: ./index.md
   - Python:
     - Python: 01_python/0_index.md
     - conda: 01_python/1_conda.md
