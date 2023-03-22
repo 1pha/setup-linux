@@ -9,4 +9,4 @@ nav:
   - github: github/README.md
 
 theme:
-  name: readthedocs
+  name: material

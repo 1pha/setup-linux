@@ -12,12 +12,11 @@ uname -m && cat /etc/*release
 sudo apt-get install linux-headers-$(uname -r)
 sudo apt autoremove
 sudo apt-get install linux-headers-$(uname -r)
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb\n
-sudo dpkg -i cuda-keyring_1.0-1_all.deb\n
-sudo apt-get update\n
-sudo apt-get -y install cuda\n
-sudo dpkg -i cuda-repo-<distro>_<version>_<architecture>.deb
-sudo dpkg -i cuda-keyring_1.0-1_all.deb\n
+wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
+sudo apt-get update
+sudo apt-get -y install cuda
+sudo dpkg -i cuda-keyring_1.0-1_all.deb
 sudo apt-key del 7fa2af80
 sudo apt-get update
 sudo apt-get install cuda
