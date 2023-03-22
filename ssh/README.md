@@ -48,6 +48,10 @@ Host HostB
   ProxyJump HostA
 ```
 - One can add `IdentityFile` on final target server `HostB`
+- Why one needs proxy?
+  - Some servers are not accessible even with VPN
+  - lab-2080 server is the only available server access thorugh VPN and other servers can be accessed via lab-2080 server.
+  - Also, VSCode IDE is available for non-accessible servers with VPN with proxy jump settings.
 
 ## 2. Starting `ssh` in host server
 ```zsh
