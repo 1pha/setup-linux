@@ -1,25 +1,33 @@
-site_name: DL Server Wiki
+site_name: Codehacks for Deep Learning Servers
 nav:
-  - Home: ./README.md
-  - ssh: ssh/README.md
-  - GitHub: github/README.md
-  - Linux: linux/README.md
-  - Conda: conda/README.md
-  - GPU: gpu/README.md
-  - grafana: grafana/README.md
-  - misc: misc/README.md
+  - Home: ./home.md
+  - Python:
+    - Python: 01_python/0_index.md
+    - conda: 01_python/1_conda.md
+    - Troubleshoots:
+      - Main: 01_python/troubleshoots/0_index.md
+    
+  - Linux:
+    - Linux: 02_linux/0_index.md
+    - zsh: 02_linux/1_zsh.md
+    - ssh: 02_linux/2_ssh.md
+    - "'Nifty' commands": 02_linux/3_commands.md
+    - gpu: 02_linux/3_gpu.md
+    - github: 02_linux/4_github.md
+  
+  - 'Deep Learning':
+    - Main: 03_dl/index.md
+
+  - "#TODOs":
+    - Main: homeworks/index.md
+    - grafana: homeworks/grafana/index.md
 
 theme:
+  name: material
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      toggle:
-        icon: material/brightness-auto
-        name: Switch to light mode
-
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
-      scheme: default 
+      scheme: default
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
@@ -29,8 +37,8 @@ theme:
       scheme: slate
       toggle:
         icon: material/brightness-4
-        name: Switch to system preference
-
+        name: Switch to light mode
+  
   features:
     - navigation.instant
     - navigation.tabs
@@ -40,6 +48,21 @@ theme:
     - search.suggest
     - search.highlight
     - search.share
+    - content.code.copy
+    - content.code.annotate
+
 plugins:
   - search
-  
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
