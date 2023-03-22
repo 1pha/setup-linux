@@ -1,9 +1,10 @@
 # Miscellaneous
-Commands
 
-## `watch`
+## Simple Commands
+
+### `watch`
 For gpu monitoring
-```zsh
+```bash
 watch -d -n 0.5 nvidia-smi
 ```
 - `-d`: Show **d**ifference

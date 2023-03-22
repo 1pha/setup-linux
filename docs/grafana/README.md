@@ -1,2 +1,2 @@
 # Grafana
-https://grafana.com/tutorials/grafana-fundamentals/
+- [Basic Tutorials](https://grafana.com/tutorials/grafana-fundamentals/)
