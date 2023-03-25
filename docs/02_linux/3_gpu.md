@@ -26,3 +26,5 @@ sudo apt-get install cuda-drivers-525
 sudo reboot
 nvidia-smi
 ```
+
+* Use `nvidia-smi` to check 
