@@ -5,8 +5,9 @@ For gpu monitoring
 ```bash
 watch -d -n 0.5 nvidia-smi
 ```
-- `-d`: Show **d**ifference
-- `-n`: Time interval
+
+* `-d`: Show **d**ifference
+* `-n`: Time interval
 
 ## `tmux`: Running in background, but accessible
 ```bash title="Installing tmux"
@@ -38,18 +39,23 @@ Flags
 * `-h`: Human-readable
 * `-e`: Extra ssh flags to feed
 
+Sometimes permission issue may be raised.
+
 
 Reference
-- [Rsync basics](https://www.lesstif.com/system-admin/rsync-data-backup-12943658.html)
-- [Changing ports](https://gkstamin.tistory.com/entry/Linux-rsync%EC%8B%9C-ssh-%ED%8F%AC%ED%8A%B8-%EB%B3%80%EA%B2%BD-%EB%B0%8F-%EC%82%AC%EC%9A%A9)
+
+* [Rsync basics](https://www.lesstif.com/system-admin/rsync-data-backup-12943658.html)
+* [Changing ports](https://gkstamin.tistory.com/entry/Linux-rsync%EC%8B%9C-ssh-%ED%8F%AC%ED%8A%B8-%EB%B3%80%EA%B2%BD-%EB%B0%8F-%EC%82%AC%EC%9A%A9)
 
 ## Checking storage for certain directory
 
-```bash
+``` bash
 ls | xargs du -sh
 ```
-!!! question "What is `xargs`?
+!!! question "What is `xargs`?"
     Sometimes you want outputs from a certain command such as list, and feed them to other commands. This is available through `xargs`. Above command allows `ls` stdout to be stdin of `du -sh` command.
+
+
 ## Mounting External disk
 ``` bash title="Mounting external disk"
 sudo fdisk -l

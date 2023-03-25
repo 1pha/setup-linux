@@ -36,18 +36,17 @@ chmod 600 ~/.ssh/authorized_keys
 ### (4) Upload new IP on Config
 
 !!! question "Where is _ssh configuration_?"
+    - _In general_ ssh configuration file `config` stays in your `~/.ssh/` directory.
+    - Basic setup as follows
+    - Put your `id_rsa` key name in `IdentityFile`
 
-  - _In general_ ssh configuration file `config` stays in your `~/.ssh/` directory.
-  - Basic setup as follows
-  - Put your `id_rsa` key name in `IdentityFile`
-
-```config
-Host (HOSTNAME)
-  HostName (IP)
-  User (USERNAME)
-  Port (PORT-NUMBER)
-  IdentityFile ~/.ssh/id_rsa
-```
+    ```config
+    Host (HOSTNAME)
+      HostName (IP)
+      User (USERNAME)
+      Port (PORT-NUMBER)
+      IdentityFile ~/.ssh/id_rsa
+    ```
 
 ####  Proxy Jumps
 * [Reference](https://superuser.com/questions/1528212/vscode-ssh-with-multiple-hops)
@@ -64,7 +63,6 @@ Host HostB
 * One can add `IdentityFile` on final target server `HostB`
 
 !!! question "Who needs proxy?"
-
-  - Some servers are not accessible even with VPN
-  - lab-2080 server is the only available server access thorugh VPN and other servers can be accessed via lab-2080 server.
-  - Also, VSCode IDE is available for non-accessible servers with VPN with proxy jump settings.
+    - Some servers are not accessible even with VPN
+    - lab-2080 server is the only available server access thorugh VPN and other servers can be accessed via lab-2080 server.
+    - Also, VSCode IDE is available for non-accessible servers with VPN with proxy jump settings.

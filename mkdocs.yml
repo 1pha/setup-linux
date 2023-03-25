@@ -11,8 +11,8 @@ nav:
     - Linux: 02_linux/0_index.md
     - zsh: 02_linux/1_zsh.md
     - ssh: 02_linux/2_ssh.md
-    - "'Nifty' commands": 02_linux/3_commands.md
-    - gpu: 02_linux/3_gpu.md
+    - "Nifty commands": 02_linux/3_commands.md
+    - GPU: 02_linux/3_gpu.md
     - github: 02_linux/4_github.md
   
   - 'Deep Learning':

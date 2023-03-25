@@ -20,6 +20,6 @@ Then login through `gh`. If you're running this on your server, choose "Paste an
 ```zsh
 gh auth login
 ```
-!!! question "What is `gpg keys`?
+!!! question "What is `gpg keys`?"
     GitHub no longer allows you to type in passwords on CLI, which means no one can clone/pull/commit anything on cli through passwords. Instead, everybody uses **Personal access tokens**. Lookup [here](https://docs.github.com/ko/enterprise-server@3.5/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) for more details
 

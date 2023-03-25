@@ -8,6 +8,7 @@ Why `zsh`?
 sudo apt-get update # (1)
 sudo apt install zsh
 ```
+
 1. :man_raising_hand: 자주할수록 잔 에러가 안생김
 
 ## `zsh` as default shell
